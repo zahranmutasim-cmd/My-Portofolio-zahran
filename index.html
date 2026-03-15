@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Zahran<span> Mu'tashim</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="animated-bg"></div>
+            <div class="hero-content">
+                <div class="hero-image-wrapper">
+                    <img src="Profile PIcture.png" alt="Muhammad Zahran Mu'tashim" class="hero-photo">
+                </div>
+                <div class="hero-text">
+                    <h1 class="dev-greeting">Hello I'am</h1>
+                    <h1 class="dev-name">Muhammad Zahran Mu'tashim</h1>
+                    <h2 class="dev-role">I'am a <span class="typing-text"></span></h2>
+                    <button class="btn primary-btn" id="view-experience-btn">View Experience</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section hidden">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p class="about-text">
+                        Nama saya Muhammad Zahran Mu'tashim. Saya berasal dari Palembang, Sumatera Selatan. Saat ini saya adalah seorang mahasiswa di Politeknik Negeri Sriwijaya yang sangat tertarik dan bersemangat dalam bidang teknologi informasi, terutama berfokus pada pengembangan website, pengembangan sistem, dan pembuatan aplikasi modern yang fungsional.
+                        saya juga sering mengikuti pelatihan tentang websit dan AI.
+                    </p>
+                    <div class="tech-icons">
+                        <i class="fab fa-html5" title="HTML5" style="color: #E34F26;"></i>
+                        <i class="fab fa-css3-alt" title="CSS3" style="color: #1572B6;"></i>
+                        <i class="fab fa-js" title="JavaScript" style="color: #F7DF1E;"></i>
+                        <i class="fab fa-react" title="React" style="color: #61DAFB;"></i>
+                        <i class="fab fa-node-js" title="Node.js" style="color: #339933;"></i>
+                        <i class="fab fa-python" title="Python" style="color: #3776AB;"></i>
+                        <i class="fab fa-git-alt" title="Git" style="color: #F05032;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section hidden">
+            <div class="container">
+                <h2 class="section-title">Experience & Certifications</h2>
+                <div class="experience-grid">
+                    <!-- Card 1 -->
+                    <div class="exp-card">
+                        <div class="exp-img-wrapper" data-img="Sertif pertama .jpg">
+                            <img src="Sertif pertama .jpg" alt="Certification 1">
+                            <div class="img-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="exp-content">
+                            <h3 class="exp-title">Learning series #1 GDG Sriwijaya state politechinc</h3>
+                            <p class="exp-desc">Pelatihan Mengenai pengembangan dan Pembuatan sistem Aplikasi menggunakan Kotlin dan Jetpack Compose.</p>
+                            <span class="exp-year">2025</span>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="exp-card">
+                        <div class="exp-img-wrapper" data-img="Sertif ke dua _page-0001.jpg">
+                            <img src="Sertif ke dua _page-0001.jpg" alt="Certification 2">
+                            <div class="img-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="exp-content">
+                            <h3 class="exp-title">Intro to Data Analytics</h3>
+                            <p class="exp-desc">Pelatihan mengenai Data Analytics yang diselenggarakan oleh RevoU selama 7 hari, berfokus pada pembelajaran menganalisis dan penggunaan Excel.</p>
+                            <span class="exp-year">2025</span>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="exp-card">
+                        <div class="exp-img-wrapper" data-img="Seritif ke tiga_page-0001.jpg">
+                            <img src="Seritif ke tiga_page-0001.jpg" alt="Certification 3">
+                            <div class="img-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="exp-content">
+                            <h3 class="exp-title">Coding Camp</h3>
+                            <p class="exp-desc">Pelatihan yang diselenggarakan oleh RevoU yang berfokus pada pembuatan dan pengembangan website dasar HTML, CSS, dan JavaScript.</p>
+                            <span class="exp-year">2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section hidden">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="Web Pendataan staf.png" alt="Sistem Pendataan Staf">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Sistem Pendataan Staf</h3>
+                            <p class="project-desc">Aplikasi web untuk mendata dan mengelola informasi staf perusahaan secara efisien.</p>
+                            <div class="tech-tags">
+                                <span class="tag-html"><i class="fab fa-html5"></i> HTML</span>
+                                <span class="tag-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                                <span class="tag-js"><i class="fab fa-js"></i> JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="Web kedai Kopi.png" alt="Website Kedai Kopi">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Website Kedai Kopi</h3>
+                            <p class="project-desc">Landing page interaktif untuk sebuah kedai kopi, menampilkan menu dan galeri lokasi.</p>
+                            <div class="tech-tags">
+                                <span class="tag-html"><i class="fab fa-html5"></i> HTML</span>
+                                <span class="tag-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                                <span class="tag-js"><i class="fab fa-js"></i> JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="Web todo list sederahana.png" alt="Todo List App">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Aplikasi Todo List Sederhana</h3>
+                            <p class="project-desc">Aplikasi manajemen tugas harian yang simpel dan mudah digunakan berbasis website.</p>
+                            <div class="tech-tags">
+                                <span class="tag-html"><i class="fab fa-html5"></i> HTML</span>
+                                <span class="tag-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                                <span class="tag-js"><i class="fab fa-js"></i> JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section hidden">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-grid">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zahranmutasim@gmail.com" target="_blank" class="compact-contact">
+                        <i class="fas fa-envelope"></i>
+                        <span class="compact-text">Email</span>
+                    </a>
+                    <a href="https://wa.me/qr/Y7RSPH5ACCZRA1" class="compact-contact">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="compact-text">WhatsApp</span>
+                    </a>
+                    <a href="https://github.com/zahranmutasim-cmd" class="compact-contact">
+                        <i class="fab fa-github"></i>
+                        <span class="compact-text">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-zahran-mu-tashim-aa64403b3" class="compact-contact">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="compact-text">LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/zahranmutasim?igsh=MWhqYnU5YnZreDZzZQ==" class="compact-contact">
+                        <i class="fab fa-instagram"></i>
+                        <span class="compact-text">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Image Preview -->
+    <div class="modal" id="image-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
